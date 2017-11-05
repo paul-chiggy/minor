@@ -6,7 +6,7 @@
       <File FileName="Assets/Scripts/Ai/FSM/Actions/AttackAction.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Ai/FSM/Actions/GuardAction.cs" Line="1" Column="1" />
       <File FileName="Assets/Scripts/Ai/FSM/Decisions/ScanDecision.cs" Line="11" Column="5" />
-      <File FileName="Assets/Scripts/Ai/FSM/Decisions/LookDecision.cs" Line="16" Column="59" />
+      <File FileName="Assets/Scripts/Ai/FSM/Decisions/LookDecision.cs" Line="23" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Minor_220Skilled PreferredExecutionTarget="Unity.Editor" />
