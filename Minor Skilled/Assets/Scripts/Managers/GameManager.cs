@@ -47,26 +47,24 @@ public class GameManager : GenericSingleton<GameManager>
 			foreach (var u in p.StartingUnits)
 			{
                 GameObject obj = null;
-                Vector3 tmp = p.Location.position;
-                p.Location.position = Util.GetSpotInsideUnitSphere(p.Location, 10);
+                Vector3 spawnSpot = Util.GetSpotInsideUnitSphere(p.Location, 10);
                 switch(u.gameObject.tag) {
 					case "knight":
-                        CreateUnitCommand knight = new CreateUnitCommand(typeof(Knight), p, p.Location);
+                        CreateUnitCommand knight = new CreateUnitCommand(typeof(Knight), p, spawnSpot);
                         obj = knight.Create();
                         break;
                     case "castle":
-                        CreateBuildingCommand castle = new CreateBuildingCommand(typeof(Castle), p, p.Location);
+                        CreateBuildingCommand castle = new CreateBuildingCommand(typeof(Castle), p, spawnSpot);
                         obj = castle.Create();
                         break;
                     case "tower":
-                        CreateBuildingCommand tower = new CreateBuildingCommand(typeof(Tower), p, p.Location);
+                        CreateBuildingCommand tower = new CreateBuildingCommand(typeof(Tower), p, spawnSpot);
                         obj = tower.Create();
                         break;
 					default:
                         Debug.Log("Object with valid tag must be proveded!");
                         break;
                 }
-                p.Location.position = tmp;
 				if (obj == null) return;
 			}
 		}

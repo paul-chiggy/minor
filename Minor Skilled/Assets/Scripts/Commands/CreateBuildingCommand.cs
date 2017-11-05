@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CreateBuildingCommand : Command
 {
-    public CreateBuildingCommand(Type type, PlayerInfo info, Transform spot)
+    public CreateBuildingCommand(Type type, PlayerInfo info, Vector3 spot)
     {
         MyType = type;
         this.info = info;

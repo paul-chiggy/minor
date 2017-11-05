@@ -23,10 +23,8 @@ public class CreateKnightAi : AiBehaviour
     public override void Execute()
     {
         Debug.Log(_support.Info.Name + " is creating a knight");
-        Vector3 tempPos = transform.position;
-        transform.position = Util.GetSpotInsideUnitSphere(_support.Castles[Random.Range(0, _support.Castles.Count)].transform, RangeFromCastle);
-        CreateUnitCommand knight = new CreateUnitCommand(typeof(Knight), _support.Info, transform);
+        Vector3 tempPos = Util.GetSpotInsideUnitSphere(_support.Castles[Random.Range(0, _support.Castles.Count)].transform, RangeFromCastle);
+        CreateUnitCommand knight = new CreateUnitCommand(typeof(Knight), _support.Info, tempPos);
         knight.Create();
-        transform.position = tempPos;
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class CreateUnitCommand : Command
 {
-    public CreateUnitCommand(Type type, PlayerInfo info, Transform spot)
+    public CreateUnitCommand(Type type, PlayerInfo info, Vector3 spot)
     {
         this.MyType = type;
         this.info = info;

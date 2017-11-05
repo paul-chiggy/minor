@@ -58,7 +58,6 @@
 /Users/chiggy/Study/Unity projects/Minor Skilled/Temp/UnityVS_bin/Debug/UnityEditor.iOS.Extensions.Common.dll.mdb
 /Users/chiggy/Study/Unity projects/Minor Skilled/Temp/UnityVS_bin/Debug/Mono.Security.dll.mdb
 /Users/chiggy/Study/Unity projects/Minor Skilled/Temp/UnityVS_bin/Debug/Unity.UNetWeaver.dll.mdb
-/Users/chiggy/Study/Unity projects/Minor Skilled/Temp/UnityVS_obj/Debug/Minor Skilled.Plugins.csprojResolveAssemblyReference.cache
 /Users/chiggy/Study/Unity projects/Minor Skilled/Temp/UnityVS_obj/Debug/Minor Skilled.Plugins.csproj.CoreCompileInputs.cache
 /Users/chiggy/Study/Unity projects/Minor Skilled/Temp/UnityVS_obj/Debug/Assembly-CSharp-firstpass.dll.dll
 /Users/chiggy/Study/Unity projects/Minor Skilled/Temp/UnityVS_obj/Debug/Assembly-CSharp-firstpass.dll.pdb

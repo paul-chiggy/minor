@@ -32,16 +32,15 @@ public class RightClickNav : Interaction
     {
         _agent.SetDestination(_target);
         _agent.isStopped = false;
-        foreach (var m in GetComponents<Mobile>()) { mobiles.Add(m); }
-        if (mobiles.Count == 1) { _agent.speed = mobiles[0].MovingSpeed; }
+        if (mobiles.Count > 0) { _agent.speed = mobiles[0].MovingSpeed; }
         _isActive = true;
-        mobiles.Clear();
     }
 
 	private void Start ()
     {
         _agent = GetComponent<NavMeshAgent>();
         _info = GetComponent<Player>().Info;
+        foreach (var m in GetComponents<Mobile>()) { mobiles.Add(m); }
 	}
 	
 	private void Update ()

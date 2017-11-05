@@ -29,19 +29,17 @@ public class FindBuildingSite : Find
             if(Input.GetMouseButtonDown(0)) {
                 switch(BuildingType) {
                     case "castle":
-                        CreateBuildingCommand castle = new CreateBuildingCommand(typeof(Castle), Info, transform);
+                        CreateBuildingCommand castle = new CreateBuildingCommand(typeof(Castle), Info, transform.position);
                         castle.Create();
                         break;
                     case "tower":
-                        CreateBuildingCommand tower = new CreateBuildingCommand(typeof(Tower), Info, transform);
+                        CreateBuildingCommand tower = new CreateBuildingCommand(typeof(Tower), Info, transform.position);
                         tower.Create();
                         break;
                     case "knight":
-                        Vector3 tmp = Source.transform.position;
-                        Source.transform.position = Util.GetSpotInsideUnitSphere(Source.transform, 20);
-                        CreateUnitCommand knight = new CreateUnitCommand(typeof(Knight), Info, Source.transform);
+                        Vector3 tmp = Util.GetSpotInsideUnitSphere(Source.transform, 20);
+                        CreateUnitCommand knight = new CreateUnitCommand(typeof(Knight), Info, tmp);
                         knight.Create();
-                        Source.transform.position = tmp;
                         break;
                     default:
                         throw new System.Exception("Correct type (tag) of building must be provided");

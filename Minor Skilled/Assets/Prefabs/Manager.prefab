@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TimeBetweenChecks: 1
-  VisibleRange: 50
+  VisibleRange: 500
   PBlips: []
   OBlips: []
 --- !u!114 &114544714446835196
@@ -137,7 +137,7 @@ MonoBehaviour:
     Location: {fileID: 0}
     KingdomColor: {r: 1, g: 0, b: 0, a: 1}
     StartingUnits:
-    - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
+    - {fileID: 1833335317022186, guid: 4b2bc7258007247bf9aa6cbc2059135b, type: 2}
     - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
     - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
     - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
@@ -147,6 +147,17 @@ MonoBehaviour:
   - Name: Player 2
     Location: {fileID: 0}
     KingdomColor: {r: 0, g: 1, b: 0.048275948, a: 1}
+    StartingUnits:
+    - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
+    - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
+    - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
+    - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
+    - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
+    isAi: 1
+    Gold: 350
+  - Name: Player 3
+    Location: {fileID: 0}
+    KingdomColor: {r: 0, g: 0.21379304, b: 1, a: 1}
     StartingUnits:
     - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
     - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}

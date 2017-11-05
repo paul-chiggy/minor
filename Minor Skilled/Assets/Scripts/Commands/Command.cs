@@ -6,7 +6,7 @@ public abstract class Command
     public abstract void Execute();
     public abstract GameObject Create();
     protected Type MyType;
-    protected Transform spawnSpot;
+    protected Vector3 spawnSpot;
     protected PlayerInfo info;
     protected float cost;
 
@@ -21,8 +21,8 @@ public abstract class Command
         } else {
             go.GetComponent<Hightlight>().enabled = false;
         }
-        go.transform.position = spawnSpot.position;
-        go.transform.rotation = spawnSpot.rotation;
+        go.transform.position = spawnSpot;
+        go.transform.rotation = Quaternion.identity;
         go.GetComponent<MapBlip>().enabled = true;
     }
 }

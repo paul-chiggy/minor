@@ -24,11 +24,9 @@ public class CreateCastleAi : AiBehaviour
         {
             for (int i = 0; i < TriesPerKnight; i++)
             {
-                Vector3 tempPos = transform.position;
-                transform.position = Util.GetSpotInsideUnitSphere(u.transform, RangeFromKnight);
-                CreateBuildingCommand castle = new CreateBuildingCommand(typeof(Castle), _support.Info, transform);
+                Vector3 tempPos = Util.GetSpotInsideUnitSphere(u.transform, RangeFromKnight);
+                CreateBuildingCommand castle = new CreateBuildingCommand(typeof(Castle), _support.Info, tempPos);
                 go = castle.Create();
-                transform.position = tempPos;
                 if(Util.isGameObjectsSafeToPlace(go)) return;
             }
         }
