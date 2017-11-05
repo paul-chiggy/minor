@@ -119,12 +119,6 @@
     <Compile Include="Assets\Scripts\Actions\ConvertUnitAction.cs" />
     <Compile Include="Assets\Scripts\Actions\CreateBuildingAction.cs" />
     <Compile Include="Assets\Scripts\Actions\CreateUnitAction.cs" />
-    <Compile Include="Assets\Scripts\Ai\AiBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Ai\AiController.cs" />
-    <Compile Include="Assets\Scripts\Ai\AiSupport.cs" />
-    <Compile Include="Assets\Scripts\Ai\AttackAi.cs" />
-    <Compile Include="Assets\Scripts\Ai\CreateCastleAi.cs" />
-    <Compile Include="Assets\Scripts\Ai\CreateKnightAi.cs" />
     <Compile Include="Assets\Scripts\Ai\FSM\Actions\AiAction.cs" />
     <Compile Include="Assets\Scripts\Ai\FSM\Actions\AttackAction.cs" />
     <Compile Include="Assets\Scripts\Ai\FSM\Actions\ChaseAction.cs" />
@@ -137,7 +131,13 @@
     <Compile Include="Assets\Scripts\Ai\FSM\State.cs" />
     <Compile Include="Assets\Scripts\Ai\FSM\StateController.cs" />
     <Compile Include="Assets\Scripts\Ai\FSM\Transition.cs" />
-    <Compile Include="Assets\Scripts\Ai\IdleAi.cs" />
+    <Compile Include="Assets\Scripts\Ai\WeightedList\AiBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Ai\WeightedList\AiController.cs" />
+    <Compile Include="Assets\Scripts\Ai\WeightedList\AiSupport.cs" />
+    <Compile Include="Assets\Scripts\Ai\WeightedList\AttackAi.cs" />
+    <Compile Include="Assets\Scripts\Ai\WeightedList\CreateCastleAi.cs" />
+    <Compile Include="Assets\Scripts\Ai\WeightedList\CreateKnightAi.cs" />
+    <Compile Include="Assets\Scripts\Ai\WeightedList\IdleAi.cs" />
     <Compile Include="Assets\Scripts\Commands\Command.cs" />
     <Compile Include="Assets\Scripts\Commands\CreateBuildingCommand.cs" />
     <Compile Include="Assets\Scripts\Commands\CreateUnitCommand.cs" />
