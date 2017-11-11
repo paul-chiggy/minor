@@ -348,7 +348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &584221680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -376,6 +376,13 @@ MonoBehaviour:
   NextWayPoint: 0
   ChaseTarget: {fileID: 0}
   StateTimeElapsed: 0
+  Info:
+    Name: 
+    Location: {fileID: 0}
+    KingdomColor: {r: 0, g: 0, b: 0, a: 0}
+    StartingUnits: []
+    isAi: 0
+    Gold: 0
 --- !u!195 &584221681
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -516,7 +523,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &747733318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,6 +551,13 @@ MonoBehaviour:
   NextWayPoint: 0
   ChaseTarget: {fileID: 0}
   StateTimeElapsed: 0
+  Info:
+    Name: 
+    Location: {fileID: 0}
+    KingdomColor: {r: 0, g: 0, b: 0, a: 0}
+    StartingUnits: []
+    isAi: 0
+    Gold: 0
 --- !u!195 &747733319
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -653,6 +667,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114544714446835196, guid: dc3a4a2222e664932b6a194d612b0941,
+        type: 2}
+      propertyPath: ObjectPoolSetup.PooledPrefabs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 4444805187938384, guid: dc3a4a2222e664932b6a194d612b0941, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -765,6 +784,12 @@ Prefab:
       propertyPath: Players.Array.data[2].Location
       value: 
       objectReference: {fileID: 1484116243}
+    - target: {fileID: 114544714446835196, guid: dc3a4a2222e664932b6a194d612b0941,
+        type: 2}
+      propertyPath: ObjectPoolSetup.PooledPrefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 1766528146287104, guid: 99881267f748a48dfbe8e7df8ceed0f3,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc3a4a2222e664932b6a194d612b0941, type: 2}
   m_IsPrefabParent: 0
@@ -810,7 +835,7 @@ Prefab:
     - target: {fileID: 114959890362977064, guid: 1d58c310154894ee0887ba7776beb401,
         type: 2}
       propertyPath: AiKind
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114959890362977064, guid: 1d58c310154894ee0887ba7776beb401,
         type: 2}

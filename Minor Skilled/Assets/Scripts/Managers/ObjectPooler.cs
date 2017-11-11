@@ -8,8 +8,9 @@ public class ObjectPooler
     private List<GameObject> _inactiveKnights;
     private List<GameObject> _inactiveCastles;
     private List<GameObject> _inactiveTowers;
+    private List<GameObject> _inactiveBullets;
     public Dictionary<UnitType, List<GameObject>> PooledMap { get { return _pooledMap; } }
-    public enum UnitType { CASTLE, KNIGHT, TOWER } //add types here when expansion is needed
+    public enum UnitType { CASTLE, KNIGHT, TOWER, BULLET } //add types here when expansion is needed
 
     public ObjectPooler()
     {
@@ -23,10 +24,12 @@ public class ObjectPooler
         _inactiveKnights = new List<GameObject>();
         _inactiveCastles = new List<GameObject>();
         _inactiveTowers = new List<GameObject>();
+        _inactiveBullets = new List<GameObject>();
         _pooledMap = new Dictionary<UnitType, List<GameObject>>();
         _pooledMap.Add(UnitType.KNIGHT, _inactiveKnights);
         _pooledMap.Add(UnitType.CASTLE, _inactiveCastles);
         _pooledMap.Add(UnitType.TOWER, _inactiveTowers);
+        _pooledMap.Add(UnitType.BULLET, _inactiveBullets);
     }
 
     private void _populatePooledLists()
@@ -48,6 +51,12 @@ public class ObjectPooler
             GameObject obj = MonoBehaviour.Instantiate(_setup.GetPooledPrefab("tower"));
             obj.SetActive(false);
             PooledMap[UnitType.TOWER].Add(obj);
+        }
+        for (int b = 0; b < _setup.bulletsAmount; b++)
+        {
+            GameObject obj = MonoBehaviour.Instantiate(_setup.GetPooledPrefab("bullet"));
+            obj.SetActive(false);
+            PooledMap[UnitType.BULLET].Add(obj);
         }
     }
 
@@ -77,6 +86,14 @@ public class ObjectPooler
                 {
                     go = PooledMap[UnitType.TOWER][PooledMap[UnitType.TOWER].Count - 1];
                     PooledMap[UnitType.TOWER].Remove(go);
+                    return go;
+                }
+                return null;
+            case UnitType.BULLET:
+                if (PooledMap[UnitType.BULLET].Count > 0)
+                {
+                    go = PooledMap[UnitType.BULLET][PooledMap[UnitType.BULLET].Count - 1];
+                    PooledMap[UnitType.BULLET].Remove(go);
                     return go;
                 }
                 return null;

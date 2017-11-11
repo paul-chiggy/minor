@@ -160,6 +160,7 @@
     <Compile Include="Assets\Scripts\Setup\ObjectPoolSetup.cs" />
     <Compile Include="Assets\Scripts\Setup\Player.cs" />
     <Compile Include="Assets\Scripts\Setup\PlayerInfo.cs" />
+    <Compile Include="Assets\Scripts\Units\Bullet.cs" />
     <Compile Include="Assets\Scripts\Units\Castle.cs" />
     <Compile Include="Assets\Scripts\Units\Knight.cs" />
     <Compile Include="Assets\Scripts\Units\Mobile.cs" />

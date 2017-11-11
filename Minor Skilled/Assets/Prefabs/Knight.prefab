@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4866075454811618}
   - component: {fileID: 33349124319115842}
   - component: {fileID: 136539271868643700}
+  - component: {fileID: 135040732193595082}
   - component: {fileID: 23080286461357176}
   - component: {fileID: 54586472292024552}
   - component: {fileID: 195394284776851832}
@@ -415,6 +416,18 @@ MonoBehaviour:
     type: 2}
   MaxBuildingDistance: 30
   UnitCost: 50
+--- !u!135 &135040732193595082
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1245602023322112}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &136539271868643700
 CapsuleCollider:
   m_ObjectHideFlags: 1

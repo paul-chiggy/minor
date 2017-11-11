@@ -10,6 +10,6 @@ public class GuardAction : AiAction
 
     private void _guard(StateController controller)
     {
-        
+        controller.transform.Rotate(0, controller.ScanRotationSpeed * Time.deltaTime, 0);
     }
 }

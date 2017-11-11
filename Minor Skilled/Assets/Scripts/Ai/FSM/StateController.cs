@@ -16,6 +16,7 @@ public class StateController : MonoBehaviour
     [HideInInspector] public int NextWayPoint;
     [HideInInspector] public Transform ChaseTarget;
     [HideInInspector] public float StateTimeElapsed = 0;
+    [HideInInspector] public PlayerInfo Info;
     private bool _isActive;
 
 	void Start ()
@@ -26,6 +27,7 @@ public class StateController : MonoBehaviour
 	void Update ()
     {
         //if (!_isActive) return;
+        if (Info == null) { Info = GetComponent<Player>().Info; }
         CurrentState.UpdateState(this);
 	}
 

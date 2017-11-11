@@ -1,12 +1,11 @@
 ﻿<Properties StartupConfiguration="{76D7E938-C645-5B50-4B53-DE0970B3E126}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ai/FSM/Decisions/LookDecision.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Ai/FSM/Actions/AttackAction.cs">
     <Files>
       <File FileName="Assets/Scripts/Managers/MouseManager.cs" Line="83" Column="43" />
-      <File FileName="Assets/Scripts/Ai/FSM/StateController.cs" Line="12" Column="42" />
-      <File FileName="Assets/Scripts/Ai/FSM/Actions/AttackAction.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Ai/FSM/Actions/GuardAction.cs" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/Ai/FSM/Decisions/ScanDecision.cs" Line="11" Column="5" />
-      <File FileName="Assets/Scripts/Ai/FSM/Decisions/LookDecision.cs" Line="23" Column="6" />
+      <File FileName="Assets/Scripts/Ai/FSM/StateController.cs" Line="30" Column="66" />
+      <File FileName="Assets/Scripts/Ai/FSM/Actions/AttackAction.cs" Line="19" Column="81" />
+      <File FileName="Assets/Scripts/Ai/FSM/Decisions/LookDecision.cs" Line="18" Column="35" />
+      <File FileName="Assets/Scripts/Units/Bullet.cs" Line="18" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.Minor_220Skilled PreferredExecutionTarget="Unity.Editor" />
