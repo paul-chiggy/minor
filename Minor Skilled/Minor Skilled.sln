@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio for Mac
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minor Skilled", "Minor Skilled.csproj", "{76D7E938-C645-5B50-4B53-DE0970B3E126}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minor Skilled.Plugins", "Minor Skilled.Plugins.csproj", "{9CF5154D-E54C-B37F-B8FE-4835C854EDAF}"
