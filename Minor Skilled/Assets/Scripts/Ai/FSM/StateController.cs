@@ -10,6 +10,7 @@ public class StateController : MonoBehaviour
     public float AttackRate = 1f;
     public float SearchDuration = 1f;
     public float ScanRotationSpeed = 10f;
+    public float ShootingSpeed = 30f;
     public Transform Eyes;
     public Transform[] Waypoints;
     [HideInInspector] public NavMeshAgent Agent;

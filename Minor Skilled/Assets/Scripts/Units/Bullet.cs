@@ -8,9 +8,9 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "knight")
+        if(other.gameObject.GetComponent<Vulnerable>() != null)
         {
-            other.gameObject.GetComponent<Knight>().TakeDamage(BulletDamage);
+            other.gameObject.GetComponent<Vulnerable>().TakeDamage(BulletDamage);
             _getMeToPool();
         }
         if(other == GameManager.Instance.MouseManager.MapCollider)
