@@ -371,6 +371,7 @@ MonoBehaviour:
   AttackRate: 1
   SearchDuration: 1
   ScanRotationSpeed: 10
+  ShootingSpeed: 30
   Eyes: {fileID: 390477750}
   Waypoints:
   - {fileID: 214086775}
@@ -548,6 +549,7 @@ MonoBehaviour:
   AttackRate: 1
   SearchDuration: 1
   ScanRotationSpeed: 10
+  ShootingSpeed: 30
   Eyes: {fileID: 34027618}
   Waypoints:
   - {fileID: 214086775}
@@ -675,11 +677,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114544714446835196, guid: dc3a4a2222e664932b6a194d612b0941,
-        type: 2}
-      propertyPath: ObjectPoolSetup.PooledPrefabs.Array.size
-      value: 4
-      objectReference: {fileID: 0}
     - target: {fileID: 4444805187938384, guid: dc3a4a2222e664932b6a194d612b0941, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -712,41 +709,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114053839447934934, guid: dc3a4a2222e664932b6a194d612b0941,
-        type: 2}
-      propertyPath: BackgroundPic
-      value: 
-      objectReference: {fileID: 391949285}
-    - target: {fileID: 114053839447934934, guid: dc3a4a2222e664932b6a194d612b0941,
-        type: 2}
-      propertyPath: Buttons.Array.data[0]
-      value: 
-      objectReference: {fileID: 1811017160}
-    - target: {fileID: 114053839447934934, guid: dc3a4a2222e664932b6a194d612b0941,
-        type: 2}
-      propertyPath: Buttons.Array.data[1]
-      value: 
-      objectReference: {fileID: 741259984}
-    - target: {fileID: 114053839447934934, guid: dc3a4a2222e664932b6a194d612b0941,
-        type: 2}
-      propertyPath: Buttons.Array.data[2]
-      value: 
-      objectReference: {fileID: 1418971395}
-    - target: {fileID: 114053839447934934, guid: dc3a4a2222e664932b6a194d612b0941,
-        type: 2}
-      propertyPath: Buttons.Array.data[3]
-      value: 
-      objectReference: {fileID: 659840304}
-    - target: {fileID: 114053839447934934, guid: dc3a4a2222e664932b6a194d612b0941,
-        type: 2}
-      propertyPath: Buttons.Array.data[4]
-      value: 
-      objectReference: {fileID: 659840303}
-    - target: {fileID: 114260781856082704, guid: dc3a4a2222e664932b6a194d612b0941,
-        type: 2}
-      propertyPath: MapCollider
-      value: 
-      objectReference: {fileID: 186730402}
     - target: {fileID: 114346775961567372, guid: dc3a4a2222e664932b6a194d612b0941,
         type: 2}
       propertyPath: UnitPic
@@ -777,6 +739,41 @@ Prefab:
       propertyPath: GoldCredits
       value: 
       objectReference: {fileID: 1745752200}
+    - target: {fileID: 114260781856082704, guid: dc3a4a2222e664932b6a194d612b0941,
+        type: 2}
+      propertyPath: MapCollider
+      value: 
+      objectReference: {fileID: 186730402}
+    - target: {fileID: 114053839447934934, guid: dc3a4a2222e664932b6a194d612b0941,
+        type: 2}
+      propertyPath: BackgroundPic
+      value: 
+      objectReference: {fileID: 391949285}
+    - target: {fileID: 114053839447934934, guid: dc3a4a2222e664932b6a194d612b0941,
+        type: 2}
+      propertyPath: Buttons.Array.data[0]
+      value: 
+      objectReference: {fileID: 1811017160}
+    - target: {fileID: 114053839447934934, guid: dc3a4a2222e664932b6a194d612b0941,
+        type: 2}
+      propertyPath: Buttons.Array.data[1]
+      value: 
+      objectReference: {fileID: 741259984}
+    - target: {fileID: 114053839447934934, guid: dc3a4a2222e664932b6a194d612b0941,
+        type: 2}
+      propertyPath: Buttons.Array.data[2]
+      value: 
+      objectReference: {fileID: 1418971395}
+    - target: {fileID: 114053839447934934, guid: dc3a4a2222e664932b6a194d612b0941,
+        type: 2}
+      propertyPath: Buttons.Array.data[3]
+      value: 
+      objectReference: {fileID: 659840304}
+    - target: {fileID: 114053839447934934, guid: dc3a4a2222e664932b6a194d612b0941,
+        type: 2}
+      propertyPath: Buttons.Array.data[4]
+      value: 
+      objectReference: {fileID: 659840303}
     - target: {fileID: 114544714446835196, guid: dc3a4a2222e664932b6a194d612b0941,
         type: 2}
       propertyPath: Players.Array.data[0].Location
@@ -792,12 +789,6 @@ Prefab:
       propertyPath: Players.Array.data[2].Location
       value: 
       objectReference: {fileID: 1484116243}
-    - target: {fileID: 114544714446835196, guid: dc3a4a2222e664932b6a194d612b0941,
-        type: 2}
-      propertyPath: ObjectPoolSetup.PooledPrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 1766528146287104, guid: 99881267f748a48dfbe8e7df8ceed0f3,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc3a4a2222e664932b6a194d612b0941, type: 2}
   m_IsPrefabParent: 0

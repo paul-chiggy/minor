@@ -9,8 +9,9 @@ public class ObjectPooler
     private List<GameObject> _inactiveCastles;
     private List<GameObject> _inactiveTowers;
     private List<GameObject> _inactiveBullets;
+    private List<GameObject> _inactivePeasants;
     public Dictionary<UnitType, List<GameObject>> PooledMap { get { return _pooledMap; } }
-    public enum UnitType { CASTLE, KNIGHT, TOWER, BULLET } //add types here when expansion is needed
+    public enum UnitType { CASTLE, KNIGHT, TOWER, BULLET, PEASANT } //add types here when expansion is needed
 
     public ObjectPooler()
     {
@@ -25,11 +26,13 @@ public class ObjectPooler
         _inactiveCastles = new List<GameObject>();
         _inactiveTowers = new List<GameObject>();
         _inactiveBullets = new List<GameObject>();
+        _inactivePeasants = new List<GameObject>();
         _pooledMap = new Dictionary<UnitType, List<GameObject>>();
         _pooledMap.Add(UnitType.KNIGHT, _inactiveKnights);
         _pooledMap.Add(UnitType.CASTLE, _inactiveCastles);
         _pooledMap.Add(UnitType.TOWER, _inactiveTowers);
         _pooledMap.Add(UnitType.BULLET, _inactiveBullets);
+        _pooledMap.Add(UnitType.PEASANT, _inactivePeasants);
     }
 
     private void _populatePooledLists()
@@ -57,6 +60,12 @@ public class ObjectPooler
             GameObject obj = MonoBehaviour.Instantiate(_setup.GetPooledPrefab("bullet"));
             obj.SetActive(false);
             PooledMap[UnitType.BULLET].Add(obj);
+        }
+        for (int b = 0; b < _setup.peasantsAmount; b++)
+        {
+            GameObject obj = MonoBehaviour.Instantiate(_setup.GetPooledPrefab("peasant"));
+            obj.SetActive(false);
+            PooledMap[UnitType.PEASANT].Add(obj);
         }
     }
 
@@ -97,7 +106,15 @@ public class ObjectPooler
                     return go;
                 }
                 return null;
-            // add cases here when new units pop up
+            case UnitType.PEASANT:
+                if (PooledMap[UnitType.PEASANT].Count > 0)
+                {
+                    go = PooledMap[UnitType.PEASANT][PooledMap[UnitType.PEASANT].Count - 1];
+                    PooledMap[UnitType.PEASANT].Remove(go);
+                    return go;
+                }
+                return null;
+                // add cases here when new units pop up
         }
     }
 }

@@ -141,7 +141,7 @@ MonoBehaviour:
     - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
     - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
     - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
-    - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
+    - {fileID: 1358495824492586, guid: 616cd92cdbd829848a08feb649ab8bfb, type: 2}
     isAi: 0
     Gold: 350
   - Name: Player 2
@@ -171,6 +171,9 @@ MonoBehaviour:
     - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
     - {fileID: 1346362460651550, guid: 90cf561d1fee4453c8621f242950581e, type: 2}
     - {fileID: 1833335317022186, guid: 4b2bc7258007247bf9aa6cbc2059135b, type: 2}
+    - {fileID: 1766528146287104, guid: 99881267f748a48dfbe8e7df8ceed0f3, type: 2}
+    - {fileID: 1358495824492586, guid: 616cd92cdbd829848a08feb649ab8bfb, type: 2}
     castlesAmount: 10
     knightsAmount: 25
     towersAmount: 10
+    bulletsAmount: 300

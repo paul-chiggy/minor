@@ -61,7 +61,11 @@ public class GameManager : GenericSingleton<GameManager>
                         CreateBuildingCommand tower = new CreateBuildingCommand(typeof(Tower), p, spawnSpot);
                         obj = tower.Create();
                         break;
-					default:
+                    case "peasant":
+                        CreateUnitCommand peasant = new CreateUnitCommand(typeof(Peasant), p, spawnSpot);
+                        obj = peasant.Create();
+                        break;
+                    default:
                         Debug.Log("Object with valid tag must be proveded!");
                         break;
                 }

@@ -284,6 +284,7 @@
     <Compile Include="Assets\Scripts\Units\Castle.cs" />
     <Compile Include="Assets\Scripts\Units\Knight.cs" />
     <Compile Include="Assets\Scripts\Units\Mobile.cs" />
+    <Compile Include="Assets\Scripts\Units\Peasant.cs" />
     <Compile Include="Assets\Scripts\Units\Tower.cs" />
     <Compile Include="Assets\Scripts\Units\Vulnerable.cs" />
     <Compile Include="Assets\Scripts\Utils\AttackInRange.cs" />

@@ -18,6 +18,7 @@ public class CreateUnitCommand : Command
     public override GameObject Create()
     {
         if (MyType == typeof(Knight)) { return _createKnight(); }
+        if (MyType == typeof(Peasant)) { return _createPeasant (); }
         //insert else if condition with other options
         return null;
     }
@@ -25,6 +26,19 @@ public class CreateUnitCommand : Command
     private GameObject _createKnight()
     {
         GameObject go = GameManager.Instance.ObjectPooler.GetPooledObject(ObjectPooler.UnitType.KNIGHT);
+        if (go)
+        {
+            go.SetActive(true);
+            Setup(go);
+            go.AddComponent<RightClickNav>();
+            info.ActiveUnits.Add(go);
+        }
+        return go;
+    }
+
+    private GameObject _createPeasant()
+    {
+        GameObject go = GameManager.Instance.ObjectPooler.GetPooledObject(ObjectPooler.UnitType.PEASANT);
         if (go)
         {
             go.SetActive(true);

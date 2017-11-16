@@ -8,7 +8,8 @@ public class ObjectPoolSetup
     public int castlesAmount = 5;
     public int knightsAmount = 25;
     public int towersAmount = 5;
-    public int bulletsAmount = 300;
+    public int bulletsAmount = 20;
+    public int peasantsAmount = 30;
 
     public GameObject GetPooledPrefab(string myTag)
     {
