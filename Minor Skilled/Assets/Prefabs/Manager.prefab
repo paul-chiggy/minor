@@ -148,10 +148,10 @@ MonoBehaviour:
     Location: {fileID: 0}
     KingdomColor: {r: 0, g: 1, b: 0.048275948, a: 1}
     StartingUnits:
-    - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
-    - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
-    - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
-    - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
+    - {fileID: 1358495824492586, guid: 616cd92cdbd829848a08feb649ab8bfb, type: 2}
+    - {fileID: 1358495824492586, guid: 616cd92cdbd829848a08feb649ab8bfb, type: 2}
+    - {fileID: 1358495824492586, guid: 616cd92cdbd829848a08feb649ab8bfb, type: 2}
+    - {fileID: 1358495824492586, guid: 616cd92cdbd829848a08feb649ab8bfb, type: 2}
     - {fileID: 1245602023322112, guid: d3acedf7e43574d6c900b7726a2e15c0, type: 2}
     isAi: 1
     Gold: 350
@@ -177,3 +177,4 @@ MonoBehaviour:
     knightsAmount: 25
     towersAmount: 10
     bulletsAmount: 300
+    peasantsAmount: 30

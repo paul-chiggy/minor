@@ -11,8 +11,8 @@ public class LookDecision : Decision
     private bool _look(StateController controller)
     {
         RaycastHit hit;
-        Debug.DrawRay(controller.Eyes.position, controller.Eyes.forward.normalized * controller.LookingRange, Color.red);
-        if (Physics.SphereCast(controller.Eyes.position, 3f, controller.Eyes.forward, out hit, controller.LookingRange) 
+        Debug.DrawRay(controller.Vars.Eyes.position, controller.Vars.Eyes.forward.normalized * controller.Vars.LookingRange, Color.red);
+        if (Physics.SphereCast(controller.Vars.Eyes.position, 3f, controller.Vars.Eyes.forward, out hit, controller.Vars.LookingRange) 
             && hit.collider.CompareTag("knight"))
         {
             controller.ChaseTarget = hit.transform;

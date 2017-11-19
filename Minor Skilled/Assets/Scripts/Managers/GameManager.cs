@@ -66,11 +66,10 @@ public class GameManager : GenericSingleton<GameManager>
                         obj = peasant.Create();
                         break;
                     default:
-                        Debug.Log("Object with valid tag must be proveded!");
-                        break;
+                        throw new System.Exception("Object with valid tag must be proveded!");
                 }
-				if (obj == null) return;
-			}
+				if (obj == null) throw new System.Exception("Objectpooler returned null, something went wrong!");
+            }
 		}
     }
 }

@@ -5,7 +5,7 @@ public abstract class Command
 {
     public abstract void Execute();
     public abstract GameObject Create();
-    protected Type MyType;
+    protected Type type;
     protected Vector3 spawnSpot;
     protected PlayerInfo info;
     protected float cost;

@@ -5,7 +5,7 @@ public class CreateBuildingCommand : Command
 {
     public CreateBuildingCommand(Type type, PlayerInfo info, Vector3 spot)
     {
-        MyType = type;
+        base.type = type;
         this.info = info;
         spawnSpot = spot;
     }
@@ -17,8 +17,8 @@ public class CreateBuildingCommand : Command
 
     public override GameObject Create()
     {
-        if (MyType == typeof(Castle)) { return _createCastle(); }
-        if (MyType == typeof(Tower)) { return _createTower(); }
+        if (type == typeof(Castle)) { return _createCastle(); }
+        if (type == typeof(Tower)) { return _createTower(); }
         return null;
     }
 

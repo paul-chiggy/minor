@@ -247,14 +247,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentState: {fileID: 11400000, guid: ca20a02a40bdf42cb876ebd1dc16b198, type: 2}
   RemainState: {fileID: 11400000, guid: ee7d899e1812246139bb023d86def2f7, type: 2}
-  LookingRange: 50
-  AttackRange: 30
-  AttackRate: 1
-  SearchDuration: 1
-  ScanRotationSpeed: 10
-  ShootingSpeed: 30
-  Eyes: {fileID: 4927954361757522}
-  Waypoints: []
+  Vars:
+    LookingRange: 30
+    AttackRange: 10
+    AttackRate: 1
+    SearchDuration: 1
+    ScanRotationSpeed: 10
+    ShootingSpeed: 30
+    Eyes: {fileID: 4927954361757522}
+    Waypoints: []
   Agent: {fileID: 0}
   NextWayPoint: 0
   ChaseTarget: {fileID: 0}

@@ -12,7 +12,7 @@ public class ScanDecision : Decision
     private bool _scan(StateController controller)
     {
         if (controller.Agent) { controller.Agent.isStopped = true; }
-        controller.transform.Rotate(0, controller.ScanRotationSpeed * Time.deltaTime, 0);
-        return controller.CheckIfCountdownElapsed(controller.SearchDuration);
+        controller.transform.Rotate(0, controller.Vars.ScanRotationSpeed * Time.deltaTime, 0);
+        return controller.CheckIfCountdownElapsed(controller.Vars.SearchDuration);
     }
 }

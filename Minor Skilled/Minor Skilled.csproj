@@ -250,6 +250,7 @@
     <Compile Include="Assets\Scripts\Ai\FSM\Decisions\ScanDecision.cs" />
     <Compile Include="Assets\Scripts\Ai\FSM\State.cs" />
     <Compile Include="Assets\Scripts\Ai\FSM\StateController.cs" />
+    <Compile Include="Assets\Scripts\Ai\FSM\StateVars.cs" />
     <Compile Include="Assets\Scripts\Ai\FSM\Transition.cs" />
     <Compile Include="Assets\Scripts\Ai\WeightedList\AiBehaviour.cs" />
     <Compile Include="Assets\Scripts\Ai\WeightedList\AiController.cs" />

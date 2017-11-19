@@ -10,12 +10,12 @@ public class PatrolAction : AiAction
 
     private void _patrol(StateController controller)
     {
-        controller.Agent.destination = controller.Waypoints[controller.NextWayPoint].position;
+        controller.Agent.destination = controller.Vars.Waypoints[controller.NextWayPoint].position;
         controller.Agent.isStopped = false;
 
         if(controller.Agent.remainingDistance <= controller.Agent.stoppingDistance && !controller.Agent.pathPending)
         {
-            controller.NextWayPoint = (controller.NextWayPoint + 1) % controller.Waypoints.Length;
+            controller.NextWayPoint = (controller.NextWayPoint + 1) % controller.Vars.Waypoints.Length;
         }
     }
 }

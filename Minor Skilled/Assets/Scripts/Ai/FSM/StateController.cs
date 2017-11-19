@@ -5,14 +5,7 @@ public class StateController : MonoBehaviour
 {
     public State CurrentState;
     public State RemainState;
-    public float LookingRange = 30f;
-    public float AttackRange = 10f;
-    public float AttackRate = 1f;
-    public float SearchDuration = 1f;
-    public float ScanRotationSpeed = 10f;
-    public float ShootingSpeed = 30f;
-    public Transform Eyes;
-    public Transform[] Waypoints;
+    public StateVars Vars;
     [HideInInspector] public NavMeshAgent Agent;
     [HideInInspector] public int NextWayPoint;
     [HideInInspector] public Transform ChaseTarget;
@@ -34,10 +27,10 @@ public class StateController : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if(CurrentState != null && Eyes != null)
+        if(CurrentState != null && Vars.Eyes != null)
         {
             Gizmos.color = CurrentState.GizmoColor;
-            Gizmos.DrawWireSphere(Eyes.position, 2f);
+            Gizmos.DrawWireSphere(Vars.Eyes.position, 2f);
         }
     }
 

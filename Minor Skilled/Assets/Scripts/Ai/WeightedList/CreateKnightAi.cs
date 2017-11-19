@@ -1,10 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CreateKnightAi : AiBehaviour
 {
     public int KnightsPerCastle = 5;
+    public int TriesPerCastle = 3;
     public float RangeFromCastle = 15;
     public float Cost = 5;
     private AiSupport _support;
@@ -22,9 +21,18 @@ public class CreateKnightAi : AiBehaviour
 
     public override void Execute()
     {
-        Debug.Log(_support.Info.Name + " is creating a knight");
-        Vector3 tempPos = Util.GetSpotInsideUnitSphere(_support.Castles[Random.Range(0, _support.Castles.Count)].transform, RangeFromCastle);
-        CreateUnitCommand knight = new CreateUnitCommand(typeof(Knight), _support.Info, tempPos);
-        knight.Create();
+        GameObject go = null;
+        foreach (var u in _support.Castles)
+        {
+            for (int i = 0; i < TriesPerCastle; i++)
+            {
+                Vector3 tempPos = Util.GetSpotInsideUnitSphere(u.transform, RangeFromCastle);
+                Debug.Log(_support.Info.Name + " is creating a knight at " + tempPos);
+                CreateUnitCommand knight = new CreateUnitCommand(typeof(Knight), _support.Info, tempPos);
+                go = knight.Create();
+                if (Util.isGameObjectsSafeToPlace(go)) return;
+            }
+        }
+        if (go) go.GetComponent<Knight>().Die(go);
     }
 }
